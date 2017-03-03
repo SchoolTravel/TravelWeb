@@ -2,7 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" metadata-complete="true" version="3.0">
   <servlet>
     <servlet-name>Register</servlet-name>
-    <servlet-class>RegisterServlet</servlet-class>
+    <servlet-class>servlet.RegisterServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Register</servlet-name>
@@ -10,7 +10,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>Login</servlet-name>
-    <servlet-class>LoginServlet</servlet-class>
+    <servlet-class>servlet.servlet.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Login</servlet-name>
@@ -18,7 +18,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>Logout</servlet-name>
-    <servlet-class>LogoutServlet</servlet-class>
+    <servlet-class>servlet.LogoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Logout</servlet-name>
@@ -26,7 +26,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>Search</servlet-name>
-    <servlet-class>SearchServlet</servlet-class>
+    <servlet-class>servlet.SearchServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Search</servlet-name>

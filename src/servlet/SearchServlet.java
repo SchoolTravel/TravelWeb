@@ -1,3 +1,4 @@
+package servlet;
 
 
 import java.io.IOException;
@@ -8,16 +9,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class RegisterServlet
+ * Servlet implementation class SearchServlet
  */
-@WebServlet("/RegisterServlet")
-public class RegisterServlet extends HttpServlet {
+@WebServlet("/SearchServlet")
+public class SearchServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public RegisterServlet() {
+    public SearchServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,8 +29,6 @@ public class RegisterServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		System.out.println("doPost");
-		System.out.println(request.getParameter("UserName"));
 	}
 
 	/**
@@ -37,10 +36,9 @@ public class RegisterServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-//		doGet(request, response);
-		System.out.println("doPost");
-		System.out.println(request.getParameter("email"));
-		
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.getWriter().append("<br>");
+		response.getWriter().append("Served at: ").append("HelloWorld");
 	}
 
 }

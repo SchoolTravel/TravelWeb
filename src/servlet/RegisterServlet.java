@@ -1,3 +1,4 @@
+package servlet;
 
 
 import java.io.IOException;
@@ -8,16 +9,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class LogoutServlet
+ * Servlet implementation class RegisterServlet
  */
-@WebServlet("/LogoutServlet")
-public class LogoutServlet extends HttpServlet {
+@WebServlet("/RegisterServlet")
+public class RegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LogoutServlet() {
+    public RegisterServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,10 +28,9 @@ public class LogoutServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
-		request.getSession().setAttribute("username", null);
-		request.getSession().setAttribute("password", null);
-		request.getRequestDispatcher("Index.jsp").forward(request, response);
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+		System.out.println("doPost");
+		System.out.println(request.getParameter("UserName"));
 	}
 
 	/**
@@ -38,9 +38,10 @@ public class LogoutServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.getSession().setAttribute("username", null);
-		request.getSession().setAttribute("password", null);
-		request.getRequestDispatcher("Index.jsp").forward(request, response);
+//		doGet(request, response);
+		System.out.println("doPost");
+		System.out.println(request.getParameter("email"));
+		
 	}
 
 }
