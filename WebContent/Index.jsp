@@ -26,7 +26,7 @@
 	  		}%>
 	  	</div>
 	  </div>
-	<form action="" method="post" >
+	<form action="/TravelWeb/Search" method="post" >
 		<input  type="keywords" name="keywords" style="border-radius: 5px;width:60%;height:34px;">
 		<button type="submit" class="login-btn register-btn" id="button" style="color:#fff;border: 0;box-shadow:none;border-radius: 5px;background: #0f88eb;cursor: pointer;display:inline-block;width:10%;height:40px;">搜索</button>
 	</form>

@@ -16,12 +16,20 @@
     <servlet-name>Login</servlet-name>
     <url-pattern>/Login</url-pattern>
   </servlet-mapping>
-    <servlet>
+  <servlet>
     <servlet-name>Logout</servlet-name>
     <servlet-class>LogoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Logout</servlet-name>
     <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/Search</url-pattern>
   </servlet-mapping>
 </web-app>
