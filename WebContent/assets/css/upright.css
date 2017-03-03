@@ -1,0 +1,36 @@
+
+div {
+    display: block;
+}
+.wrapper_s #u {
+    margin-right: 3px;
+}
+
+body #wrapper, body #head, #head #head_wrapper, body #s_fm, body #s_form_wrapper, body #form, body #wrapper_wrapper, body #u, body #s_tab, body #result_logo img, #u div, #u div a, #head .bdsug ul {
+    display: block;
+}
+
+body #s_tab, body #wrapper_wrapper, body #u, body #result_logo {
+    display: block;
+}
+
+#u {
+    z-index: 301;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 21px 9px 5px 0;
+    padding: 0;
+}
+
+#u {
+    color: #999;
+    white-space: nowrap;
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    z-index: 299;
+}
+#u, #head, #tool, #search, #foot {
+    font-size: 12px;
+}

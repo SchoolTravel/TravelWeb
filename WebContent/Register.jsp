@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>  
-<%  
-    String path = request.getContextPath();  
-%>   
+<% String context = request.getContextPath();
+   out.println(context);
+%>
 <html>
 <head>
 	<meta charset="utf-8">
